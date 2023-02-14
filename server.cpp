@@ -67,9 +67,9 @@ int main(int argc, char *argv[]) {
 	printf("클리아이언트가 보내준 메세지:%s\n", data);
 
 	// write 함수는 데이터를 전송하는 기능의 함수인데, 이 문장이 실행됬다는 것은 연결요청이 있었다는 뜻
-	data[0] = "Z";
-	data[1] = "H";
-	data[2] = "Q";
+	data[0] = 'Z';
+	data[1] = 'H';
+	data[2] = 'Q';
 	write(client_sock, data, sizeof(data));
 
 	// 소켓 닫음
